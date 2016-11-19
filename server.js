@@ -13,6 +13,7 @@ var express = require('express'),// server middleware
     expressValidator = require('express-validator'), // validation tool for processing user input
     cookieParser = require('cookie-parser'),
     session = require('express-session'),
+    agent = require('bluemix-autoscaling-agent'),
     MongoStore = require('connect-mongo/es5')(session), // store sessions in MongoDB for persistence
     bcrypt = require('bcrypt'), // middleware to encrypt/decrypt passwords
     sessionDB,
